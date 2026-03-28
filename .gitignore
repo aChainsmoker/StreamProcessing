@@ -55,3 +55,4 @@ nunit-*.xml
 
 global.json
 .idea/
+*.DotSettings.user
