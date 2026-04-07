@@ -15,7 +15,9 @@ public class FileProcessorLogger
     private void InitializeLogger()
     {
         if(File.Exists(_fileLogPath))
+        {
             File.Delete(_fileLogPath);
+        }
         var textWriterTraceListener = new TextWriterTraceListener(_fileLogPath)
         {
             TraceOutputOptions = TraceOptions.DateTime

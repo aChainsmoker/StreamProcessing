@@ -64,7 +64,6 @@ public class FileProcessor
         using var streamWriter = new StreamWriter(fileStream);
         _logger?.LogInfo($"Writing to file: {outputFilePath}");
         
-
         foreach (var line in lines)
         {
             streamWriter.WriteLine(line);
